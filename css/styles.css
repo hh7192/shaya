@@ -207,6 +207,11 @@ header.sticky .nav__list a:hover {
     height: 100%;
     object-fit: cove;
     border-radius: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.products .content .box .imgBx img:hover {
+    box-shadow: 0 5px 15px gold;
 }
 
 .products .content .box .tex {

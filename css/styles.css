@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -10,6 +11,15 @@ p {
     color: #111;
 }
 
+/* body {
+    min-height: 1000px;
+} */
+
+section {
+    padding: 100px;
+}
+
+/* BANNER */
 .banner {
     position: relative;
     width: 100%;
@@ -36,6 +46,7 @@ p {
     color: #fff;
 }
 
+/* BUTTON */
 .btn {
     font-size: 1em;
     color: #fff;
@@ -51,4 +62,109 @@ p {
 
 .btn:hover {
     letter-spacing: 6px;
+}
+
+/* NAV */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.header__logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .header__logo {
+    color: #111;
+}
+
+.header__logo span {
+    color: #ff0157;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+}
+
+.nav__list {
+    list-style: none;
+    margin-left: 30px;  
+}
+
+.nav__list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+header.sticky .nav__list a {
+    color: #111;
+}
+
+.nav__list a:hover {
+    color: #ff0157;
+}
+
+header.sticky .nav__list a:hover {
+    color: #ff0157;
+}
+
+/* ABOUT US BLOCK */
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.text__title {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.text__title span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.image__box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image__box .about__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }

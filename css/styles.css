@@ -168,3 +168,53 @@ header.sticky .nav__list a:hover {
     object-fit: cover;
     border-radius: 20px;
 }
+
+/* PRODUCTS */
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.products .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.products .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+.products .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.products .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cove;
+    border-radius: 20px;
+}
+
+.products .content .box .tex {
+    padding: 15px 5px; 
+}
+
+.products .content .box .tex h3 {
+
+    font-style: 400;
+    color: #111;
+}

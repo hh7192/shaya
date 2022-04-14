@@ -64,6 +64,26 @@ section {
     letter-spacing: 6px;
 }
 
+.lanBtn {
+padding: 0.5;
+width: 100px;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+background: #ff0157;
+transition: background 1s, transform 0.5s;
+}
+
+.lanBtn:hover {
+    background: black;
+    transform: rotate(30deg);
+}
+
+.lanBtn a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* NAV */
 .header {
     position: fixed;
@@ -414,4 +434,102 @@ header.sticky .nav__list a:hover {
 
 .contact__form .inputBox input[type='submit']:hover {
     background: #5a001e;
+}
+
+@media screen and (max-width: 991px) {
+    .header,
+    .header.sticky {
+        padding: 10px 20px;
+    }
+    .header .nav {
+        display: none;
+    }
+    .header .nav.active {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;  
+    }
+    .header .nav li {
+        margin-left: 0;
+    }
+    .header .nav li a {
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active {
+        background: url(../images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .header.sticky .menuToggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+    .banner__header {
+        font-size: 3em;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .image__box {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .products .content {
+        margin-top: 10px;
+    }
+    .products .content .box {
+        margin: 10px;
+    }
+    .products .content .box .imgBx {
+        height: 260px;
+    }
+    .title {
+        text-align: center;
+    }
+    .text__title {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .testimonials .content .box {
+        margin: 10px;
+        padding: 20px;
+    }
+    .contact__form {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner__content h2 {
+        font-size: 2.2em;
+    }
 }

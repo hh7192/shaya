@@ -16,14 +16,32 @@
   <body>
     <header class="header">
       <a href="#" class="header__logo">Shaya <span>.</span></a>
+      <div class="menuToggle" onclick="toggleMenu()"></div>
       <ul class="nav">
-        <li class="nav__list"><a href="#banner">Home</a></li>
-        <li class="nav__list"><a href="#about">About</a></li>
-        <li class="nav__list"><a href="#products">Products</a></li>
-        <li class="nav__list"><a href="#features">Features</a></li>
-        <li class="nav__list"><a href="#testimonials">Testimonials</a></li>
-        <li class="nav__list"><a href="#contact">Contact</a></li>
+        <li class="nav__list">
+          <a href="#banner" onclick="toggleMenu()">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="#about" onclick="toggleMenu()">About</a>
+        </li>
+        <li class="nav__list">
+          <a href="#products" onclick="toggleMenu()">Products</a>
+        </li>
+        <li class="nav__list">
+          <a href="#features" onclick="toggleMenu()">Features</a>
+        </li>
+        <li class="nav__list">
+          <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+        </li>
+        <li class="nav__list">
+          <a href="#contact" onclick="toggleMenu()">Contact</a>
+        </li>
       </ul>
+      <div>
+        <button class="lanBtn">
+          <a href="indexfa.html" target="_blank">Persian</a>
+        </button>
+      </div>
     </header>
     <section class="banner" id="banner">
       <div class="banner__content">
@@ -243,6 +261,13 @@
         const header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
       });
+
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".menuToggle");
+        const nav = document.querySelector(".nav");
+        menuToggle.classList.toggle("active");
+        nav.classList.toggle("active");
+      }
     </script>
   </body>
 </html>

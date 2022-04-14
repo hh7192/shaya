@@ -293,18 +293,10 @@
         </div>
       </div>
     </section>
-    <script type="text/javascript">
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-      });
-
-      function toggleMenu() {
-        const menuToggle = document.querySelector(".menuToggle");
-        const nav = document.querySelector(".nav");
-        menuToggle.classList.toggle("active");
-        nav.classList.toggle("active");
-      }
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

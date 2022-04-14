@@ -65,23 +65,19 @@ section {
 }
 
 .lanBtn {
-padding: 0.5;
-width: 100px;
-border: none;
-border-radius: 50%;
-cursor: pointer;
-background: #ff0157;
-transition: background 1s, transform 0.5s;
+    color: #fff;
+    padding: 0.5;
+    width: 100px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #ff0157;
+    transition: background 1s, transform 0.5s;
 }
 
 .lanBtn:hover {
     background: black;
     transform: rotate(30deg);
-}
-
-.lanBtn a {
-    text-decoration: none;
-    color: #fff;
 }
 
 /* NAV */

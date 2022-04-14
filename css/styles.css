@@ -27,7 +27,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/bg.jpg);
+    background-image: url(../images/bg.webp);
     background-size: cover;
 }
 
@@ -305,7 +305,7 @@ header.sticky .nav__list a:hover {
 
 /* TESTIMONIALS */
 .testimonials {
-    background: url(../images/bg2.jpg);
+    background: url(../images/bg2.webp);
     background-size: cover;
 }
 
@@ -374,7 +374,7 @@ header.sticky .nav__list a:hover {
 
 /* CONTACT */
 .contact {
-    background: url(../images/bg3.jpg);
+    background: url(../images/bg3.webp);
     background-size: cover;
 }
 
